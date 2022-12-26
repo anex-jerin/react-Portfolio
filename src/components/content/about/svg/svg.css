@@ -1,0 +1,52 @@
+
+
+#cup {
+  animation: fade 10s linear infinite;
+}
+#anime{
+  animation: shows 1s linear infinite;
+}
+#rotate{
+animation: wheel 1s linear infinite;
+transform-origin: center;
+transform-box:fill-box ;
+}
+@keyframes fade {
+  0%,18%,20%,50.1%,65.1%,80%,90.1%,92% {
+    opacity: 25%;
+  }
+  18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes shows {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+.svg>svg{
+  width: 670px;
+}}
+@media screen and (max-width: 900px) {
+.svg>svg{
+  width: 600px;
+}
+}
+@media screen and (max-width: 600px) {
+.svg>svg{
+  width: 300px;
+}
+}
