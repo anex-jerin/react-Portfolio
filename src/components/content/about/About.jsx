@@ -11,20 +11,21 @@ const About = () => {
         <div className='about-details'>
           <p>
             Hello! My name is Anex Jerin and I enjoy creating things that live
-            on the internet. I'm a web developer with a focus on the MERN stack,
+            on the internet. I'm a web developer with a focus on the
+            <span className='color'> MERN stack,</span>
             but still exploring other technologies and frameworks that catch my
-            interest! if you're looking for a developer to add to your team, I'd
-            love to hear from you!
+            interest! if you're looking for a developer to add to your team,
+            <span className='color'> I'd love to hear from you!</span>
           </p>
-          <p>Here are a few technologies I’ve been working with recently:</p>
-          <ul className="skill-list">
+          <p>Here are a few technologies I've been working with recently:</p>
+          <ul className='skill-list'>
             <li>JavaScript (ES6+)</li>
-            <li>React</li>
             <li>Node.js</li>
+            <li>React</li>
+            <li>Mongo DB</li>
             <li>NEXT.js</li>
             <li>CSS</li>
             <li>Material UI</li>
-            <li>Sass</li>
             <li>Tailwind CSS</li>
           </ul>
         </div>

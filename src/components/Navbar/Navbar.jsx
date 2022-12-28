@@ -1,13 +1,37 @@
 import React from 'react';
-import { useState } from 'react';
-import logo from './logo1.png';
+import { useState ,useEffect } from 'react';
+import logo from '../../image/logo1.png'
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
   const [isToggle, setIsToggle] = useState(true);
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') {
+      if (window.scrollY > lastScrollY) {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
+
   return (
-    <div className='navbar'>
+    <div className={`navbar ${!show && 'hidden'}`}>
       <div className='navlogo'>
         <img src={logo} alt='' width='50px' hieght='50px' />
       </div>
@@ -19,11 +43,14 @@ const Navbar = () => {
       >
         {isToggle ? <RxHamburgerMenu /> : <AiOutlineClose />}
       </div>
-      <ul className={isToggle ? 'navlist' : 'navlist active'}>
+      <ul className={isToggle ? 'navlist' : 'navlist mobile'}>
         <li>
-          <a href='#about' onClick={()=>{
-            setIsToggle(!isToggle)
-          }}>
+          <a
+            href='#about'
+            onClick={() => { 
+              setIsToggle(!isToggle);
+            }}
+          >
             <span>01.</span>ABOUT
           </a>
         </li>
@@ -33,12 +60,17 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href=''>
+          <a
+            href='#contact'
+            onClick={() => {
+              setIsToggle(!isToggle);
+            }}
+          >
             <span>03.</span>CONTACT
           </a>
         </li>
         <li>
-          <button className='resume'>RESUME</button>
+          <button className='resume' >RESUME</button>
         </li>
       </ul>
     </div>
