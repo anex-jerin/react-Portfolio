@@ -10,22 +10,37 @@ const Info = () => {
       <div className='info-left'>
         <ul className='social'>
           <li>
-            <a href='https://github.com/anex-jerin' title='GitHub'>
+            <a
+              href='https://github.com/anex-jerin'
+              title='GitHub'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <FiGithub className='icon' />
             </a>
           </li>
           <li>
-            <a href='https://twitter.com/Anexjerin' title='Twitter'>
+            <a
+              href='https://twitter.com/Anexjerin'
+              title='Twitter'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <SlSocialTwitter className='icon' />
             </a>
           </li>
           <li>
-            <a href='' title='Linkedin'>
+            <a
+              href=''
+              title='Linkedin'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <SlSocialLinkedin className='icon' />
             </a>
           </li>
           <li>
-            <a href=''>
+            <a href='' target='_blank' rel='noopener noreferrer'>
               <ImCodepen className='icon' />
             </a>
           </li>

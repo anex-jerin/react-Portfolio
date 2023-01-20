@@ -1,5 +1,4 @@
 import React from 'react';
-import star from '../../../image/Star.png'
 
 const Intro = () => {
   return (
@@ -21,13 +20,6 @@ const Intro = () => {
           </p>
         </div>
       </div>
-      {/* <div className="star">
-        <img src={star} alt="star" />
-        <img src={star} alt="star" />
-        <img src={star} alt="star" />
-        <img src={star} alt="star" />
-        <img src={star} alt="star" />
-      </div> */}
     </section>
   );
 };

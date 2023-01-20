@@ -1,6 +1,6 @@
 import React from 'react';
-import { useState ,useEffect } from 'react';
-import logo from '../../image/logo1.png'
+import { useState, useEffect } from 'react';
+import logo from '../../image/logo1.png';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -29,11 +29,12 @@ const Navbar = () => {
     }
   }, [lastScrollY]);
 
-
   return (
     <div className={`navbar ${!show && 'hidden'}`}>
       <div className='navlogo'>
-        <img src={logo} alt='' width='50px' hieght='50px' />
+        <a href='/'>
+          <img src={logo} alt='' width='50px' hieght='50px' />
+        </a>
       </div>
       <div
         className='toggle'
@@ -47,7 +48,7 @@ const Navbar = () => {
         <li>
           <a
             href='#about'
-            onClick={() => { 
+            onClick={() => {
               setIsToggle(!isToggle);
             }}
           >
@@ -70,7 +71,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <button className='resume' >RESUME</button>
+          <button className='resume'>RESUME</button>
         </li>
       </ul>
     </div>
