@@ -9,18 +9,18 @@ const Navbar = () => {
   const [show, setShow] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const controlNavbar = () => {
-    if (typeof window !== 'undefined') {
-      if (window.scrollY > lastScrollY) {
-        setShow(false);
-      } else {
-        setShow(true);
-      }
-      setLastScrollY(window.scrollY);
-    }
-  };
-
   useEffect(() => {
+    const controlNavbar = () => {
+      if (typeof window !== 'undefined') {
+        if (window.scrollY > lastScrollY) {
+          setShow(false);
+        } else {
+          setShow(true);
+        }
+        setLastScrollY(window.scrollY);
+      }
+    };
+
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', controlNavbar);
       return () => {
@@ -33,7 +33,7 @@ const Navbar = () => {
     <div className={`navbar ${!show && 'hidden'}`}>
       <div className='navlogo'>
         <a href='#app'>
-          <img src={logo} alt='' width='50px' hieght='50px' />
+          <img src={logo} alt='' width='50px' height='50px' />
         </a>
       </div>
       <div
