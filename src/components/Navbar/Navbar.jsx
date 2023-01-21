@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${!show && 'hidden'}`}>
       <div className='navlogo'>
-        <a href='/'>
+        <a href='#app'>
           <img src={logo} alt='' width='50px' hieght='50px' />
         </a>
       </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href=''>
+          <a href='#project'>
             <span>02.</span>PROJECTS
           </a>
         </li>

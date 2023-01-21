@@ -12,7 +12,7 @@ const About = () => {
           <p>
             Hello! My name is Anex Jerin and I enjoy creating things that live
             on the internet. I'm a web developer with a focus on the
-            <span className='color'> MERN stack,</span>
+            <span className='color'> MERN stack, </span>
             but still exploring other technologies and frameworks that catch my
             interest! if you're looking for a developer to add to your team,
             <span className='color'> I'd love to hear from you!</span>

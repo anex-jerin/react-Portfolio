@@ -1,5 +1,4 @@
 import React from 'react';
-import Svg from './Svg/Svg';
 import { FiGithub } from 'react-icons/fi';
 import { SlSocialTwitter, SlSocialLinkedin } from 'react-icons/sl';
 import { ImCodepen } from 'react-icons/im';
@@ -31,7 +30,7 @@ const Info = () => {
           </li>
           <li>
             <a
-              href=''
+              href='https://www.linkedin.com/in/anex-jerin/'
               title='Linkedin'
               target='_blank'
               rel='noopener noreferrer'
@@ -40,7 +39,11 @@ const Info = () => {
             </a>
           </li>
           <li>
-            <a href='' target='_blank' rel='noopener noreferrer'>
+            <a
+              href='https://codepen.io/anex-jerin'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <ImCodepen className='icon' />
             </a>
           </li>
