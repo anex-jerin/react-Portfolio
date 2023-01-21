@@ -14,14 +14,10 @@ const Projects = () => {
             <a
               href='https://dashboard-frontend-5ecz.onrender.com'
               target='_blank'
-              rel='noreferrer'
+              rel='noopener noreferrer'
             >
-              <img
-                className='p-img'
-                src={Dashboard}
-                alt='dashboard'
-              />
-              <div className="overlay"></div>
+              <img className='p-img' src={Dashboard} alt='dashboard' />
+              <div className='overlay'></div>
             </a>
           </div>
           <div className='project-content'>
@@ -29,7 +25,7 @@ const Projects = () => {
             <a
               href='https://dashboard-frontend-5ecz.onrender.com'
               target='_blank'
-              rel='noreferrer'
+              rel='noopener noreferrer'
               className='project-title'
             >
               <h3>Sales Dashboard</h3>
@@ -37,8 +33,7 @@ const Projects = () => {
             <div className='project-description'>
               <p>
                 A web app for user friendly dashboard at glance, Easily track
-                your Customers. Monitor and analyzing Daily, Monthly, Yearly
-                sales
+                your Customers. Monitor and analyze Daily, Monthly, Yearly sales
               </p>
             </div>
             <ul className='project-tech'>
@@ -54,7 +49,7 @@ const Projects = () => {
                 <a
                   href='https://github.com/anex-jerin/Dashboard'
                   target='_blank'
-                  rel='noreferrer'
+                  rel='noopener noreferrer'
                 >
                   <FiGithub />
                 </a>
@@ -63,7 +58,7 @@ const Projects = () => {
                 <a
                   href='https://dashboard-frontend-5ecz.onrender.com'
                   target='_blank'
-                  rel='noreferrer'
+                  rel='noopener noreferrer'
                 >
                   <HiOutlineExternalLink />
                 </a>
@@ -72,7 +67,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-        <OtherProjects/>
+      <OtherProjects />
     </div>
   );
 };

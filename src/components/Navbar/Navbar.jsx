@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import logo from '../../image/logo1.png';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
+import resume from '../../image/Resume.pdf';
 
 const Navbar = () => {
   const [isToggle, setIsToggle] = useState(true);
@@ -71,7 +72,9 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <button className='resume'>RESUME</button>
+          <a href={resume} target='_blank' rel='noreferrer noopener'>
+            <button className='resume'>RESUME</button>
+          </a>
         </li>
       </ul>
     </div>

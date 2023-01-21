@@ -15,19 +15,19 @@ const OtherProjects = () => {
               <a
                 href={link}
                 target='_blank'
-                rel='noreferrer'
+                rel='noopener noreferrer'
                 className='op-link'
               >
                 <div className='o-head'>
                   <IoFolderOpenOutline className='folder-ico' />
-                  <a href={link} target='_blank' rel='noreferrer'>
+                  <a href={link} target='_blank' rel='noopener noreferrer'>
                     <FiGithub />
                   </a>
                 </div>
                 <a
                   className='o-title'
                   target='_blank'
-                  rel='noreferrer'
+                  rel='noopener noreferrer'
                   href={link}
                 >
                   {header}
