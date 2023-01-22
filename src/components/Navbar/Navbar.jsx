@@ -57,7 +57,12 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <a href='#project'>
+          <a
+            href='#project'
+            onClick={() => {
+              setIsToggle(!isToggle);
+            }}
+          >
             <span>02.</span>PROJECTS
           </a>
         </li>
