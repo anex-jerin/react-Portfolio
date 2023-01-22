@@ -723,7 +723,7 @@ h6 {
 
 /* PROJECT MOBILE START */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1050px) {
   .projects{
     display: flex;
     flex-direction: column;
