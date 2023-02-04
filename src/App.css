@@ -75,6 +75,7 @@ h6 {
   align-items: center;
   background-color: var(--background);
   transition: 0.3s linear;
+  z-index: 15;
 }
 .hidden {
   top: -100px;
