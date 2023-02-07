@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiGithub } from 'react-icons/fi';
 import { SlSocialTwitter, SlSocialLinkedin } from 'react-icons/sl';
+import {SiLeetcode} from 'react-icons/si'
 import { ImCodepen } from 'react-icons/im';
 
 const Info = () => {
@@ -41,10 +42,21 @@ const Info = () => {
           <li>
             <a
               href='https://codepen.io/anex-jerin'
+              title='Codepen'
               target='_blank'
               rel='noopener noreferrer'
             >
               <ImCodepen className='icon' />
+            </a>
+          </li>
+          <li>
+            <a
+              href='https://leetcode.com/Anexjerin/'
+              target='_blank'
+              title='LeetCode'
+              rel='noopener noreferrer'
+            >
+              <SiLeetcode className='icon' />
             </a>
           </li>
         </ul>
