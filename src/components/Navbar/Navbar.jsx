@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className={`navbar ${!show && 'hidden'}`}>
       <div className='navlogo'>
-        <a href='#app'>
+        <a href='.'>
           <img src={logo} alt='' width='50px' height='50px' />
         </a>
       </div>
