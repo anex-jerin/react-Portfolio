@@ -23,10 +23,12 @@ const About = () => {
             <li>Node.js</li>
             <li>React</li>
             <li>Mongo DB</li>
+            <li>MySQL</li>
             <li>NEXT.js</li>
             <li>CSS</li>
             <li>Material UI</li>
             <li>Tailwind CSS</li>
+            <li>Sass</li>
           </ul>
         </div>
       </div>

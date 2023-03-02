@@ -475,6 +475,7 @@ h6 {
   position: relative;
   color: var(--main);
   line-height: 12px;
+  padding: 10px;
 }
 .color {
   color: #ff5751c7;
